@@ -15,9 +15,9 @@ These scripts were developed around the idea of using sample batches, each of wh
 
     The above bam paths need to be within the scope of `${LSF_DOCKER_VOLUMES}` in `config.ini`. Modify `${EXT_STUDY_1}` to be a meaningful parent directory containing the bams and adjust `${LSF_DOCKER_VOLUMES}` accordingly.
 
-2. Install Monopogen into `${TOPDIR}/software/Monopogen/`. We opted to place the reference files into `${TOPDIR}/${STUDY}/reference/`, namely:
-    * `${TOPDIR}/${STUDY}/reference/1KG3_imputation_panel/`
-    * `${TOPDIR}/${STUDY}/reference/GRCh38.d1.vd1/`
+2. Install Monopogen into `${TOPDIR}/software/Monopogen/`. We opted to place the reference files into `${TOPDIR}/reference/`, namely:
+    * `${TOPDIR}/reference/1KG3_imputation_panel/`
+    * `${TOPDIR}/reference/GRCh38.d1.vd1/`
 
 3. For LSF use, create and/or modify the job group under which the scripts will be run. (Here, we use `/${USER}/${LABNAME}`, where `${USER}` and `${LABNAME}` are set in `config.ini`.)
 
